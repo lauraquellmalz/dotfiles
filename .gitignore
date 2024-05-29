@@ -1,0 +1,17 @@
+# ignore everything
+/*
+
+# include this file
+!.gitignore
+
+# include what we need
+!.zshrc
+!.fzf.zsh
+!.p10k.zsh
+
+# include the config folger
+!.config
+# exlude everything in config folder
+/.config/*
+# include nvim config
+!.config/nvim
