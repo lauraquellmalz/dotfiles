@@ -69,7 +69,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 alias ls='ls -la --color'
 alias vim='nvim'
 alias c='clear'
-alias notes='nvim ~/Documents/notes'
+alias notes='cd ~/Documents/notes && nvim ~/Documents/notes'
 
 # integrate fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

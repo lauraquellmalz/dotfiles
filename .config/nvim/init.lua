@@ -15,3 +15,5 @@ require("vim-options")
 require("lazy").setup("plugins")
 
 require'barbar.api'.set_offset(40, 'File Explorer')
+
+vim.api.nvim_command('inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\\<CR>"')
