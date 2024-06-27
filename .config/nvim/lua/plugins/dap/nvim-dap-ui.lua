@@ -6,19 +6,18 @@ dapui.setup(
             {
                 elements = {
                     -- Elements can be strings or table with id and size keys.
-                    { id = "scopes", size = 0.25 },
                     "breakpoints",
---                    "stacks",
---                    "watches",
+                    "stacks",
+                    { id = "repl", size = 0.25 },
                 },
                 size = 40, -- 40 columns
                 position = "right",
             },
             {
                 elements = {
-                    "stacks"
+                    "scopes",
                 },
-                size = 10,
+                size = 20,
                 position = "bottom",
             },
         },
@@ -28,14 +27,15 @@ dapui.setup(
             -- Display controls in this element
             element = "repl",
             icons = {
-                pause = "",
-                play = "",
-                step_into = "",
-                step_over = "",
-                step_out = "",
-                step_back = "",
-                run_last = "↻",
-                terminate = "□",
+                disconnect = "",
+                pause = "",
+                play = "",
+                run_last = "",
+                step_back = "",
+                step_into = "",
+                step_out = "",
+                step_over = "",
+                terminate = ""
             },
         },
         floating = {
